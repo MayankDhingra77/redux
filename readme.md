@@ -10,3 +10,9 @@ action is a object that contains event and some additional info , additional inf
 example - user slice , contains data of user , cart slice - add to car , remove from cart 
 reducer - jha pe entire function likha hota hai update ya delete vgara karne ka 
 store - store is the singal source of truth where our state is managed 
+
+
+- ceate store 
+- wrap in main.jsx with provide
+- create slice 
+- register in store
