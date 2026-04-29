@@ -9,3 +9,4 @@ action is a object that contains event and some additional info , additional inf
 - slice - har ek feature ki state ko maintain karne ka feature slice me hota hai -initial state and reducer functions are written over here 
 example - user slice , contains data of user , cart slice - add to car , remove from cart 
 reducer - jha pe entire function likha hota hai update ya delete vgara karne ka 
+store - store is the singal source of truth where our state is managed 
