@@ -21,12 +21,17 @@ function App() {
   return (
     <>
       <div className="container">
-        <p>Count is {count}</p>
-        <button onClick={handleIncrement}> + </button>
-        <button onClick={handleDecrement}>-</button>
-        <button onClick={handleReset}>Reset</button>
-        <input type="number" value = {amount} placeholder='Enter your number' onChange={(e) => setAmount(e.target.value)}/>
-        <button onClick={handleAmount}>change by amount</button>
+        <h1 className='text-4xl p-6'>Counter App </h1>
+        <p className='text-2xl flex  justify-center p-4'>Count is {count}</p>
+        <div className='flex justify-center gap-14'>
+        <button onClick={handleIncrement} className='text-2xl border border-amber-300 p-2'> + </button>
+        <button onClick={handleDecrement} className='text-2xl border border-amber-300 p-2'>-</button>
+        </div>
+        <div className='flex justify-center p-4 gap-2'>
+        <button onClick={handleReset} className='border border-amber-200 p-1'  >Reset</button>
+        <input type="number" value = {amount} placeholder='Enter your number' onChange={(e) => setAmount(e.target.value)} className='border border-amber-300'/>
+        <button onClick={handleAmount} className='border border-amber-200'>change by amount</button>
+        </div>
       </div>
     </>
   )
